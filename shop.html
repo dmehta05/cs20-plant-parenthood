@@ -1,0 +1,92 @@
+<!-- Dhruvii Mehta, 25 September 2025 -->
+<!-- shop page -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Plants | Plant Parenthood</title>
+    <link rel="stylesheet" href="style.css">
+
+<!-- internal CSS stylesheet for plant list -->
+<style>
+    .plant-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    }
+    .plant-item {
+    background: #f1f8e9;
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    }
+    .plant-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    }
+    .price {
+    color: #2e7d32;
+    font-weight: bold;
+    margin-top: 8px;
+    }
+</style>
+</head>
+
+<body>
+<!-- header (same as homepage) -->
+<header class="navbar">
+<div class="logo">Plant Parenthood</div>
+<ul id="nav">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="shop.html">Shop Plants</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+</ul>
+</header>
+
+<!-- shop content - plants -->
+<main>
+<h1>Shop Plants</h1>
+<p>Browse our curated collection of houseplants </p>
+
+<ul class="plant-list">
+    <li class="plant-item">
+    <img src="images/snakeplant.jpg" alt="Snake Plant">
+    <h3>Snake Plant</h3>
+    <p class="price">$20</p>
+</li>
+    <li class="plant-item">
+    <img src="images/spider.jpg" alt="Spider Plant">
+    <h3>Spider Plant</h3>
+    <p class="price">$15</p>
+</li>
+    <li class="plant-item">
+    <img src="images/bird.png" alt="Bird of Paradise">
+    <h3>Bird of Paradise</h3>
+    <p class="price">$18</p>
+</li>
+    <li class="plant-item">
+    <img src="images/monstera.jpg" alt="Peace Lily">
+    <h3>Monstera Deliciosa</h3>
+    <p class="price">$22</p>
+</li>
+    <li class="plant-item">
+    <img src="images/aloe.jpg" alt="Aloe Vera">
+    <h3>Aloe Vera</h3>
+    <p class="price">$12</p>
+</li>
+</ul>
+</main>
+
+
+<footer>
+    <p>&copy; 2025 Plant Parenthood | info@plantparenthoodd.com</p>
+</footer>
+</body>
+</html>

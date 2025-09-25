@@ -1,0 +1,204 @@
+/* Dhruvii Mehta, 25 September 2025 */
+/* CSS stylesheet for Plant Parenthood*/
+
+
+body, h1, h2, h3, p, ul { margin: 0; padding: 0 }
+body {
+    font-family: 'Nunito', sans-serif;
+    background: #e8f5e9; 
+    color: #2e4630;
+    line-height: 1.6;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+/* navigation bar */
+.navbar {
+    position: fixed;    
+    top: 0;             
+    left: 0;
+    width: 100%;        
+    z-index: 1000;       
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #2e7d32;  
+    padding: 16px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white; 
+}
+
+ul#nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul#nav li {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+ul#nav a {
+    text-decoration: none;
+    color: #c8e6c9;      
+    font-weight: bold;
+}
+
+ul#nav a:hover {
+    color: white;
+    background: #43a047; 
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+/* banner */
+.banner {
+    background: url("plantban.jpg") no-repeat center center/cover;
+    padding: 120px 50px;
+    text-align: center;
+    color: white;
+}
+.banner h1 {
+    font-size: 40px;
+    margin-bottom: 16px;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+}
+
+/* button */
+.cta-btn {
+    display: inline-block;
+    margin-top: 24px;
+    padding: 10px 30px;
+    font-size: 20px;
+    background: #66bb6a;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    box-shadow: 3px 3px 12px rgba(0,0,0,0.25);
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+.cta-btn:hover {
+    background: #388e3c;
+    transform: scale(1.08);
+}
+
+/* highlights */
+.highlights {
+    display: flex;
+    justify-content: space-around;
+    padding: 32px 16px;  
+}
+.card {
+    background: #f1f8e9;
+    padding: 16px;       
+    border-radius: 12px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
+
+/* about section */
+.about {
+    text-align: center;
+    padding: 32px;      
+    background: #c8e6c9;
+    margin: 16px 0;   
+    border-radius: 8px;
+}
+
+/* footer */
+footer {
+    background: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 16px;      
+    position: fixed;     
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* responsive - website + phone */
+@media (max-width: 768px) {
+    .highlights { flex-direction: column; align-items: center; }
+    .card { width: 80%; margin-bottom: 16px; } 
+}
+
+/* service table */
+.services-table {
+    padding: 32px;
+    text-align: center;
+}
+
+.services-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+}
+
+.services-table th, .services-table td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: left;
+}
+
+.services-table th {
+    background: #2e7d32;
+    color: white;
+}
+
+.services-table tr:nth-child(even) {
+    background: #f1f8e9;
+}
+
+/* contact us form */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 32px;
+    text-align: left;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    margin-top: 6px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    margin-top: 20px;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    background: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: #388e3c;    
+}
